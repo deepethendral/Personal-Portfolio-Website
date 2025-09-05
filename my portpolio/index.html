@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thendral A - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Thendral A</h1>
+    <p>B.Tech AI & Data Science | Aspiring Web Developer</p>
+  </header>
+  
+  <nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('skills')">Skills & Certificates</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('internships')">Internships</button>
+     <button onclick="showSection('contact')">Contact</button>
+  </nav>
+  
+  <!-- About Section -->
+<section id="about" class="active">
+  <div class="card about-box">
+  <img src="profile pic.jpg" alt="Profile Photo" class="profile-pic">
+  <div class="about-text">
+    <h2>About Me</h2>
+    <p>
+      Hi! I’m <b>Thendral A</b>, a final-year <b>B.Tech (AI & Data Science)</b> student at 
+      Agni College of Technology, Chennai. With a strong foundation in programming, 
+      web development, and data-driven problem solving, I am passionate about 
+      creating impactful solutions using technology.
+    </p>
+    <p>
+      I have hands-on experience in <b>Web Development, and UI/UX Design</b>, 
+      and I enjoy turning ideas into user-friendly applications. Currently, I am 
+      <b>seeking internship opportunities</b> where I can apply my skills, contribute to 
+      real-world projects, and grow as a developer and problem solver.
+    </p>
+  </div>
+</div>
+</section>
+
+  
+  <!-- Skills & Certificates -->
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+
+    <!-- Technical Skills -->
+    <h3>💻 Technical Skills</h3>
+    <div class="skills-list">
+      <div class="skill-category">
+        <h4>Programming Languages</h4>
+        <p>Java, Python</p>
+      </div>
+      <div class="skill-category">
+        <h4>Web Development</h4>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="skill-category">
+        <h4>Frameworks & Tools</h4>
+        <p>Spring, Spring Boot, Figma (UI/UX)</p>
+      </div>
+      <div class="skill-category">
+        <h4>Database Management</h4>
+        <p>MySQL</p>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <h3>🤝 Soft Skills</h3>
+    <div class="skills-list">
+      <div class="skill-category">
+        <p>Quick Learner, Adaptability, Communication, Teamwork, Problem Solving, Attention to Detail</p>
+      </div>
+    </div>
+  </div>
+   
+  <!-- Certificates -->
+<div class="card">
+  <h2>Certificates</h2>
+  <div class="cert-grid">
+  <div class="cert-box">NPTEL: The Joy of Computing Python (2022)</div>
+  <div class="cert-box">Guvi: Python Zero to Hero (2023)</div>
+  <div class="cert-box">Guvi: Mastering Figma (UI/UX Designing) (2023)</div>
+  <div class="cert-box">LinkedIn: ML & AI Foundation (2023)</div>
+  <div class="cert-box">Skillrack: MySQL (2024)</div>
+  <div class="cert-box">Tata Strive: Junior Full Stack Java (Ongoing, 2025)</div>
+</div>
+</div>
+  </section>
+  
+  
+  
+  <!-- projects -->
+<section id="projects">
+  <div class="card">
+    <h2>Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>📘 Multilingual Learning Resource Portal</h3>
+      <p>
+        A <b>Flask-based web portal</b> designed to make education more inclusive by 
+        supporting resources in multiple languages. It enables students and educators 
+        to upload, manage, and access study materials easily.
+      </p>
+      <ul class="project-highlights">
+        <li>🌍 Multi-language support for accessibility</li>
+        <li>📝 Quiz module to improve student engagement</li>
+        <li>💾 Integrated Flask + MySQL backend</li>
+        <li>🎨 Responsive design using HTML, CSS</li>
+      </ul>
+      <a href="https://www.linkedin.com/posts/thendral-a-218085294_successfully-completed-a-project-on-multilingual-activity-7369657469498781696-00vu?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEczqvQB_-eW8d6DG8sHrrYBZVlVHCeNGbU" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>🔥 Auto-Off Gas Leakage Detection System</h3>
+      <p>
+        An <b>Arduino UNO and MQ-2 sensor–based safety system</b> that 
+        automatically detects gas leakage and prevents hazards by shutting down 
+        the regulator and alerting users.
+      </p>
+      <ul class="project-highlights">
+        <li>🔔 Triggered buzzer and fan on detection</li>
+        <li>⚙️ Auto shut-off via servo motor</li>
+        <li>🛡️ Enhanced safety with real-time monitoring</li>
+      </ul>
+      <a href="https://github.com/deepethendral/Auto-Off-Gas-Leakage-Detection-System" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <h3>🍴 Online Food Ordering Website</h3>
+      <p>
+        A full-stack <b>food ordering system</b> built using web technologies and 
+        integrated with a backend for managing menus, orders, and cart functions.
+      </p>
+      <ul class="project-highlights">
+        <li>📋 Browse and order food from dynamic menus</li>
+        <li>🛒 Cart and order management with PHP & MySQL</li>
+        <li>🌐 Responsive UI with HTML, CSS, JS</li>
+        <li>🗄️ Database managed via phpMyAdmin</li>
+      </ul>
+      <a href="https://github.com/deepethendral/food-ordering-website" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+      <h3>📝 To-Do List Application</h3>
+      <p>
+        A <b>Spring Boot + Thymeleaf + H2 Database</b> project for managing 
+        personal tasks. Supports full CRUD operations, due dates, and priority levels.
+      </p>
+      <ul class="project-highlights">
+        <li>✅ Add, update, and delete tasks</li>
+        <li>📅 Set due dates and ⭐ priorities</li>
+        <li>🔗 REST API integration (tested with Postman)</li>
+        <li>🗄️ In-memory H2 database for lightweight storage</li>
+        <li>🎨 Responsive UI with Thymeleaf templates</li>
+      </ul>
+      <a href="https://www.linkedin.com/posts/thendral-a-218085294_project-completed-to-do-list-application-activity-7369667113260621826-vuAv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEczqvQB_-eW8d6DG8sHrrYBZVlVHCeNGbU" target="_blank" class="project-link">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+  
+  <!-- Internships Section -->
+  <section id="internships">
+  <div class="card">
+    <h2>Internships</h2>
+
+    <!-- Internship 1 -->
+    <div class="project-card">
+      <h3>🎨 UI/UX Internship – Cognifyz Technology</h3>
+      <p>
+        A two-month internship focused on building <b>interactive user interfaces</b> 
+        and improving <b>user experience</b> through design principles and usability testing.
+      </p>
+      <ul class="project-highlights">
+        <li>🖌️ Designed responsive web layouts using Figma</li>
+        <li>🔍 Conducted usability testing to improve design flow</li>
+      </ul>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="project-card">
+      <h3>🤖 AI & ML Development – Altruisty</h3>
+      <p>
+        Hands-on internship where I applied <b>machine learning techniques</b> 
+        to real-world problems and gained practical exposure to model building 
+        and deployment.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-box"><i class="fas fa-envelope"></i> <a href="mailto:deepethendral@gmail.com"><b> Gmail: </b> deepethendral@gmail.com</a></div>
+        <div class="contact-box"><i class="fas fa-phone"></i> <a href="tel:+916380173614"><b>Phone no:</b> +91 6380173614</a></div>
+        <div class="contact-box"><i class="fab fa-github"></i> <a href="https://github.com/deepethendral" target="_blank"><b> GitHub </b></a></div>
+        <div class="contact-box"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/deepe-thendral-218085294" target="_blank"><b> LinkedIn </b></a></div>
+        <div class="contact-box"><i class="fas fa-map-marker-alt"></i> <b>Location: </b>Chennai, India</div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>

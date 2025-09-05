@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f0f4f8, #e8eef6);
+  color: #333;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(90deg, #4a90e2, #357ABD);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  animation: fadeInDown 1s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #2c3e50;
+  flex-wrap: wrap;
+}
+
+nav button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+  background: #34495e;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 40px;
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+section.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  max-width: 900px;
+  animation: fadeInUp 0.8s ease;
+}
+
+/* About Section */
+.about-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
+}
+.about-text {
+  flex: 1;
+}
+
+/* Skills Section */
+.skills-list {
+  margin-top: 15px;
+}
+
+.skill-category {
+  background: #f4f7fb;
+  border-left: 4px solid #4a90e2;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.skill-category h4 {
+  margin: 0 0 5px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.skill-category p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Certificates */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+.cert-box {
+  background: #4a90e2;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.3s, background 0.3s;
+}
+.cert-box:hover {
+  transform: translateY(-5px);
+  background: #357ABD;
+}
+
+/* Projects & Internships */
+.project-card {
+  margin-bottom: 20px;
+  border-left: 5px solid #4a90e2;
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+a.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #4a90e2;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+a.project-link:hover {
+  background: #357ABD;
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-box {
+  background: #4a90e2;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.contact-box i {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.contact-box a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  background: #357ABD;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile-pic {
+    margin-bottom: 15px;
+  }
+}
